@@ -3,9 +3,27 @@ import UsersList from "../components/UsersList";
 
 const Users = () => {
   const USERS = [
-    { id: 1, image: "street.jpg", name: "John", placeCount: 5 },
-    { id: 2, image: "church.jpg", name: "Edward", placeCount: 3 },
-    { id: 3, image: "arena.jpg", name: "Tomek", placeCount: 11 },
+    {
+      id: "u1",
+      image:
+        "https://images.pexels.com/photos/23876/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=750&w=1260",
+      name: "John",
+      placeCount: 5,
+    },
+    {
+      id: "u2",
+      image:
+        "https://images.pexels.com/photos/5186/person-woman-coffee-cup.jpg?auto=compress&cs=tinysrgb&h=750&w=1260",
+      name: "Lily",
+      placeCount: 3,
+    },
+    {
+      id: "u3",
+      image:
+        "https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+      name: "Tomek",
+      placeCount: 11,
+    },
   ];
   return (
     <div>

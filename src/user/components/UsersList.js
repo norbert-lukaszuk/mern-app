@@ -3,14 +3,18 @@ import UserItem from "./UserItem";
 
 const UsersList = ({ users }) => {
   if (!users.length) {
-    return <h2>No users yet</h2>;
+    return (
+      <div className="center">
+        <h2>No users yet</h2>;
+      </div>
+    );
   } else {
     return (
-      <div>
+      <ul className="user-list">
         {users.map((user) => {
           return <UserItem key={user.id} user={user} />;
         })}
-      </div>
+      </ul>
     );
   }
 };

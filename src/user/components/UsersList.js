@@ -1,6 +1,6 @@
 import React from "react";
 import UserItem from "./UserItem";
-
+import "./UsersList.css";
 const UsersList = ({ users }) => {
   if (!users.length) {
     return (
@@ -10,7 +10,7 @@ const UsersList = ({ users }) => {
     );
   } else {
     return (
-      <ul className="user-list">
+      <ul className="users-list">
         {users.map((user) => {
           return <UserItem key={user.id} user={user} />;
         })}

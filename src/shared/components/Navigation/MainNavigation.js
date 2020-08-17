@@ -1,6 +1,7 @@
 import React from "react";
 import MainHeader from "./MainHeader";
-
+import { Link } from "react-router-dom";
+import "./MainNavigation.css";
 const MainNavigation = () => {
   return (
     <MainHeader>
@@ -9,7 +10,10 @@ const MainNavigation = () => {
         <span />
         <span />
       </button>
-      <h2 className="main-navigation__title">Places</h2>
+      <h2 className="main-navigation__title">
+        <Link to="/">Places</Link>
+      </h2>
+      <nav>...</nav>
     </MainHeader>
   );
 };
